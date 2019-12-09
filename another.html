@@ -8,17 +8,36 @@
     <title>tail</title>
 
     <style>
+        p {
+            position: fixed;
+            z-index: 1;
+            right: 5%;
+            font-size: 300%;
+            color: #436468b0;
+            font-family: cursive;
+            cursor: none;
+        }
+        
+        b:hover {
+            color: #a9ffef;
+        }
+        
         .pic {
             width: 100%;
             position: absolute;
             bottom: 0;
+        }
+        
+        #grab {
+            cursor: grab;
         }
     </style>
 
 </head>
 
 <body>
-    <a target="_blank" href="index.html"><img src="tail.gif" alt="tail" class=pic></a>
+    <p>是尾巴喔 <b id=grab>啾</b></p>
+    <a target="_parent" href="index.html"><img src="tail.gif" alt="tail" class=pic id=grab></a>
 </body>
 
 </html>
